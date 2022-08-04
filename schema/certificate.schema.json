@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "certificate.schema.json",
+    "title": "Certificate",
+    "description": "Certificate of participation",
+    "type": "object",
+    "properties": {
+      "name": {
+          "description": "Title of the certificate",
+          "type": "string"
+      },
+      "participant": {
+          "description": "Name of the participant",
+          "type": "string"
+      },
+      "participantEmail": {
+          "description": "Participant's email",
+          "type": "string"
+      },
+      "identifier": {
+          "description": "Certificate ID",
+          "type": "string"
+      },
+      "achievedAt": {
+          "description": "Date of the achievement",
+          "type": "string"
+      },
+      "conference": {
+          "description": "Conference details",
+          "$ref": "conference.schema.json#"
+      },
+      "work": {
+          "description": "Creating work, e.g. conference publication, poster",
+          "$ref": "work.schema.json#"
+      }
+    },
+    "required": ["name", "participant", "participantEmail", "achievedAt", "conference"]
+  }

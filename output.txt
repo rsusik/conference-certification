@@ -1,0 +1,158 @@
+Brownie v1.17.2 - Python development framework for Ethereum
+
+Project is the active project.
+
+Launching 'ganache-cli --accounts 10 --hardfork istanbul --gasLimit 999999999999999 --mnemonic brownie --port 8545'...
+
+Running 'scripts/demo.py::main'...
+Users:
+owner/organizer 0x33A4622B82D4c04a53e170c638B944ce27cffce3
+deployer        0x66aB6D9362d4F35596279692F0251Db635165871
+other           0x0063046686E46Dc6F15918b61AE2B121458534a5
+participants    [<Account '0x21b42413bA931038f35e7A5224FaDb065d297Ba3'>, <Account '0x46C0a5326E643E4f71D3149d50B48216e174Ae84'>, <Account '0x807c47A89F720fe4Ee9b8343c286Fc886f43191b'>, <Account '0x844ec86426F076647A5362706a04570A5965473B'>, <Account '0x23BB2Bb6c340D4C91cAa478EdF6593fC5c4a6d4B'>, <Account '0xA868bC7c1AF08B8831795FAC946025557369F69C'>, <Account '0x1CEE82EEd89Bd5Be5bf2507a92a755dcF1D8e8dc'>]
+---
+Transaction sent: 0x50c530c277868b9ba27311153c0c1a35c93fc301a9da210735a5ef48294f9f97
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 0
+  ConfCertToken.constructor confirmed   Block: 1   Gas used: 2029190 (0.00%)
+  ConfCertToken deployed at: 0x3194cBDC3dbcd3E11a07892e7bA5c3394048Cc87
+
+Deployment test success!
+Contract address: 0x3194cBDC3dbcd3E11a07892e7bA5c3394048Cc87
+Contract name   : International Conference on XYZ
+Contract symbol : ICX
+---
+Transaction sent: 0x5195e47d356ca5414c5cf2c54abb8ef80ca7e882c7213b6ba24584d5f9234cdc
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 1
+  ConfCertToken.mint confirmed (Ownable: caller is not the owner)   Block: 2   Gas used: 23575 (0.00%)
+
+Unauthorized mint test success!
+Cannot mint as not an organizer. That's expected.
+---
+Minting certificates test
+Transaction sent: 0x9ca2559832b2ba324d5eb75da06a54ab9b9dc2ec582c03aaebf93285bb9abd97
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 0
+  ConfCertToken.mint confirmed   Block: 3   Gas used: 206121 (0.00%)
+
+Certificate no.1 (certificates/0.json, ID 25768222684879)
+ -> minted for participant no.0 (0x21b42413bA931038f35e7A5224FaDb065d297Ba3)
+Transaction sent: 0xc8a7575a3adf725dd9d61c53d817266e07e24d53837bd6c4e7a7f66a76379c88
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 1
+  ConfCertToken.mint confirmed   Block: 4   Gas used: 214521 (0.00%)
+
+Certificate no.2 (certificates/1.json, ID 25768222684880)
+ -> minted for participant no.1 (0x46C0a5326E643E4f71D3149d50B48216e174Ae84)
+Transaction sent: 0x9222de3525022b88fe9149362027439eb2202bfc0391392c97167fb50036156f
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 2
+  ConfCertToken.mint confirmed   Block: 5   Gas used: 214521 (0.00%)
+
+Certificate no.3 (certificates/2.json, ID 25768222684881)
+ -> minted for participant no.2 (0x807c47A89F720fe4Ee9b8343c286Fc886f43191b)
+Transaction sent: 0x3592fe57f9167e86d441278b52a82fb0e2a49ad90b151fbac7cc3fceec4b2d5e
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 3
+  ConfCertToken.mint confirmed   Block: 6   Gas used: 214521 (0.00%)
+
+Certificate no.4 (certificates/3.json, ID 25768222684882)
+ -> minted for participant no.3 (0x844ec86426F076647A5362706a04570A5965473B)
+Transaction sent: 0x98ba3a4e07f5e0cafd99f92cb479c4502780bc6fd6cb009c567991063a2eff44
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 4
+  ConfCertToken.mint confirmed   Block: 7   Gas used: 214521 (0.00%)
+
+Certificate no.5 (certificates/4.json, ID 25768222684883)
+ -> minted for participant no.4 (0x23BB2Bb6c340D4C91cAa478EdF6593fC5c4a6d4B)
+Transaction sent: 0x6d81a7cb7a56a3d096985241c089473f05b3d520672b62dc6ec2c5656ac661e8
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 5
+  ConfCertToken.mint confirmed   Block: 8   Gas used: 214521 (0.00%)
+
+Certificate no.6 (certificates/5.json, ID 25768222684884)
+ -> minted for participant no.5 (0xA868bC7c1AF08B8831795FAC946025557369F69C)
+Transaction sent: 0x05c799c025ba5b7662ca31436dfdbd7cb8f9e759eaf892266312239399c6a6f4
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 6
+  ConfCertToken.mint confirmed   Block: 9   Gas used: 214521 (0.00%)
+
+Certificate no.7 (certificates/6.json, ID 25768222684885)
+ -> minted for participant no.6 (0x1CEE82EEd89Bd5Be5bf2507a92a755dcF1D8e8dc)
+Success!
+---
+Test reading all information
+All certificates: 7
+  Certificate no.0  ID: 25768222684879 URL: https://icxyz.com/certificates/0.json
+  Certificate no.1  ID: 25768222684880 URL: https://icxyz.com/certificates/1.json
+  Certificate no.2  ID: 25768222684881 URL: https://icxyz.com/certificates/2.json
+  Certificate no.3  ID: 25768222684882 URL: https://icxyz.com/certificates/3.json
+  Certificate no.4  ID: 25768222684883 URL: https://icxyz.com/certificates/4.json
+  Certificate no.5  ID: 25768222684884 URL: https://icxyz.com/certificates/5.json
+  Certificate no.6  ID: 25768222684885 URL: https://icxyz.com/certificates/6.json
+-----
+Number of participants:  7
+  Participant no.0: 0x21b42413bA931038f35e7A5224FaDb065d297Ba3
+  Participant's tokens:
+    0. ID: 25768222684879 URL: https://icxyz.com/certificates/0.json
+
+  Participant no.1: 0x46C0a5326E643E4f71D3149d50B48216e174Ae84
+  Participant's tokens:
+    0. ID: 25768222684880 URL: https://icxyz.com/certificates/1.json
+
+  Participant no.2: 0x807c47A89F720fe4Ee9b8343c286Fc886f43191b
+  Participant's tokens:
+    0. ID: 25768222684881 URL: https://icxyz.com/certificates/2.json
+
+  Participant no.3: 0x844ec86426F076647A5362706a04570A5965473B
+  Participant's tokens:
+    0. ID: 25768222684882 URL: https://icxyz.com/certificates/3.json
+
+  Participant no.4: 0x23BB2Bb6c340D4C91cAa478EdF6593fC5c4a6d4B
+  Participant's tokens:
+    0. ID: 25768222684883 URL: https://icxyz.com/certificates/4.json
+
+  Participant no.5: 0xA868bC7c1AF08B8831795FAC946025557369F69C
+  Participant's tokens:
+    0. ID: 25768222684884 URL: https://icxyz.com/certificates/5.json
+
+  Participant no.6: 0x1CEE82EEd89Bd5Be5bf2507a92a755dcF1D8e8dc
+  Participant's tokens:
+    0. ID: 25768222684885 URL: https://icxyz.com/certificates/6.json
+
+Success!
+---
+Burn all
+  Burning token no.0: 25768222684879
+Transaction sent: 0xbf9ee4fb6029b5eadb60fa5ec35b38cee61e3c881f8eb0a12f8bd20541d84504
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 7
+  ConfCertToken.burn confirmed   Block: 10   Gas used: 56262 (0.00%)
+
+  Burning token no.1: 25768222684885
+Transaction sent: 0xbf0b3f958cb29ab9dc345590fb7ef0428608ae9966bf918aafc90ebe3350c7ae
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 8
+  ConfCertToken.burn confirmed   Block: 11   Gas used: 56262 (0.00%)
+
+  Burning token no.2: 25768222684884
+Transaction sent: 0xe6195cc0299e2c27664f876f592afea424f71eb1bca7b72a6f44e1269209b8e0
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 9
+  ConfCertToken.burn confirmed   Block: 12   Gas used: 56262 (0.00%)
+
+  Burning token no.3: 25768222684883
+Transaction sent: 0xa71c78de376694eaf3effcd0836a3364a239b77138141ccdb8b0b69212f0e6b8
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 10
+  ConfCertToken.burn confirmed   Block: 13   Gas used: 56262 (0.00%)
+
+  Burning token no.4: 25768222684882
+Transaction sent: 0x6ce2c9e3f543632c059c9bfda53d156c3ecf67498dccebeb32bfe68047ddf884
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 11
+  ConfCertToken.burn confirmed   Block: 14   Gas used: 56262 (0.00%)
+
+  Burning token no.5: 25768222684881
+Transaction sent: 0x0e9bbfabb4bba11e106bff6e1d24bef15f1bc201ed08cc84d8a532ba0686e081
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 12
+  ConfCertToken.burn confirmed   Block: 15   Gas used: 56262 (0.00%)
+
+  Burning token no.6: 25768222684880
+Transaction sent: 0x34c0220b90dd81604e78d9aa0e2c3fb9da37b407d1103768589596756eb4d3e2
+  Gas price: 0.0 gwei   Gas limit: 999999999999999   Nonce: 13
+  ConfCertToken.burn confirmed   Block: 16   Gas used: 47862 (0.00%)
+
+Success!
+---
+Number of certificates: 0
+Number of participants: 0
+The end
+Terminating local RPC client...

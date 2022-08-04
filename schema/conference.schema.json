@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "conference.schema.json",
+    "title": "Conference details",
+    "description": "Details about conference",
+    "type": "object",
+    "properties": {
+      "startDate": {
+          "description": "When the conference started",
+          "type": "string"    
+      },
+      "endDate": {
+          "description": "When the conference ended",
+          "type": "string"    
+      },
+      "name": {
+          "description": "Name of the conference",
+          "type": "string"    
+      },
+      "acronym": {
+          "description": "A short name of the conference",
+          "type": "string"    
+      },
+      "location": {
+          "description": "Location of the conference",
+          "type": "string"    
+      },
+      "subject": {
+          "description": "What the conference is about (part after the 'on')",
+          "type": "string"
+      },
+      "organizer": {
+          "description": "Conference organizer",
+          "type": "array",
+          "items": {
+              "type": "object",
+              "properties": {
+                  "name": {
+                      "description": "Organizer name",
+                      "type": "string"
+                  },
+                  "type": {
+                      "description": "Type of organizer, e.g. organization, conference series maintainer, local chair",
+                      "type": "string"
+                  }
+              },
+              "required": ["name"],
+              "minItems": 1
+          }
+      }
+    },
+    "required": ["startDate", "endDate", "name", "acronym", "location", "organizer"]
+}

@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "work.schema.json",
+    "title": "Creative work",
+    "description": "Creative work",
+    "type": "object",
+    "properties": {
+      "name": {
+          "description": "Title of the creative work, e.g. title of publication",
+          "type": "string"
+      },
+      "authors": {
+          "description": "Author(s) of the creative work",
+          "type": "array",
+          "items": {
+              "type": "string"
+          },
+          "minItems": 1
+      },
+      "abstract": {
+          "description": "Abstract of the creative work",
+          "type": "string"
+      },
+      "keywords": {
+          "description": "Keywords",
+          "type": "array",
+          "items": {
+              "type": "string"
+          }
+      },
+      "identifier": {
+          "description": "Identifier of the creative work e.g. ISSN/ISBN/DOI",
+          "type": "string"
+      },
+      "publisher": {
+          "description": "Publisher of the creative work",
+          "type": "string"
+      }
+    },
+    "required": ["name", "authors"]
+  }
