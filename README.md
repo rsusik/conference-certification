@@ -38,9 +38,7 @@ npm install ganache-cli@6.12.2
 
 ### Demo
 
-Demo that deploys the smart contract, mint certificates on blockchain and tests functionality is implemented in [`demo.py`](./scripts/demo.py) script.
-The demo produces and output such as [`output.txt`](./output.txt).
-Tu run demo execute:
+The demo that deploys the smart contract, mint certificates on blockchain and tests functionality is implemented in the [`demo.py`](./scripts/demo.py) script. The demo produces an output such as in the [`output.txt`](./output.txt) file. To run demo execute:
 
 ```
 brownie run demo
